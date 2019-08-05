@@ -1,0 +1,469 @@
+html{
+  font-family: sans-serif;
+  font-size: 16px;
+ margin:0;
+}
+body{
+  color: hsla(0, 0%,0%, 0.7);
+  border:solid lightgrey 1px;
+
+  margin-left: 16px;
+
+}
+
+
+/* header */
+.content{
+  display: flex;
+  background-color: white;
+ color:hsla(0,0%, 0%, 0.9);
+  height: 64px;
+  margin-top:32px;
+
+}
+.logo{
+  display: flex;
+  margin-left:24px;
+align-items: center;
+  height: 32px;
+  flex-grow: 1
+}
+.logo p{
+  font-size: 2rem;
+}
+.logo span{
+  font-size: 2rem;
+  color:hsla(0,0%, 0%, 0.4);
+}
+.logo .img0{
+height: 40px;
+width: 35px;
+}
+.img1, .img2,.img3{
+  display: none;
+}
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 24px;
+  align-items: center;
+  height: 32px;
+}
+.menu span{
+  padding-left: 16px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width:960px){
+  .content{
+    height: 64px;
+  }
+  .logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  .img1, .img2,.img3{
+    display: block;
+  }
+  .menu{
+    display: none;
+  }
+  .logo p, span{
+    display: none;
+  }
+}
+
+
+/* main */
+.main{
+  background-color: hsla(0, 0%, 0%, 0.2);
+  display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ color:hsla(0, 0%, 20%, 0.8);
+}
+ .image {
+  width: 60%;
+  margin: 32px 24px 32px 24px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.title h1{
+  font-size:3rem;
+  font-weight:900px;
+}
+.title h3{
+  font-size:1.5rem;
+  line-height: 1.5;
+  font-weight:bold;
+}
+.button{
+  color: white;
+  background-color: hsla(0, 0%, 20%, 0.8) ;
+  text-align: center;
+}
+.button p{
+  font-size:1.3rem;
+  padding: 8px 0;
+}
+@media only screen and (max-width:960px){
+  .main{
+    display: block;
+    width: 100%;
+  }
+
+.image {
+  width:100%;
+  margin: 0;
+}
+.image img{
+  width:100%;
+}
+.title{
+  padding: 32px 16px 32px 16px;
+}
+.title h1{
+  margin-bottom:32px;
+}
+.title h3{
+  margin-bottom: 24px;
+}
+
+}
+
+
+/* main2*/
+
+.main2{
+  margin: 32px 24px 32px 0;
+  background-color: white;
+  display: flex;
+}
+
+
+.image1{
+    margin: 0 24px 32px 24px;
+    width: 60%;
+}
+
+.image1 img{
+width: 100%;
+}
+
+.image1 h1{
+  font-size: 3.2rem;
+  font-weight: 850px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.image1 p{
+  font-size:1.3rem;
+  line-height: 1.5;
+
+}
+.image1 span{
+  font-size: 1rem;
+  font-family:"arial";
+  color: black;
+
+}
+.column{
+  width:40%;
+
+}
+.box{
+  display: flex;
+  border: solid lightgrey .25px;
+  align-items: center;
+}
+.box:last-child {
+  background-color: lightgrey;
+}
+.box:first-child {
+  margin-bottom: 3px;
+}
+.box img{
+  width:35%;
+ padding: 20px;
+ height: auto;
+}
+.text{
+width:65%;
+}
+.text .mobile{
+  display: none;
+}
+.box h3{
+  font-size: 2rem;
+  font-weight:bold;
+ color: hsla(0, 0%, 0%, 0.8);
+ margin-bottom: 8px;
+}
+.text p{
+  font-size: 1.3rem;
+line-height: 1.5rem;
+margin-bottom: 8px;
+}
+.text span{
+  font-size: 1.2rem;
+  color: blue;
+}
+.box h2{
+  display: none;
+}
+
+
+
+@media only screen and (max-width:960px){
+
+  .main2{
+    display:block;
+    width: 100%;
+
+  }
+  .image1{
+    display: none;
+  }
+  .column{
+
+    width:100%;
+    margin:16px 16px 0 0;
+   border-bottom: solid lightgrey 0.2px;
+
+  }
+  .box{
+    display: block;
+    border: none;
+    margin-bottom: 64px;
+
+}
+
+.box img{
+  width:100%;
+  padding-left:0;
+  max-height: 250px;
+
+}
+  .box:last-child {
+     background-color: white;
+  }
+
+  .text{
+  width:100%;
+  text-align: left;
+  height: auto;
+  padding-left: 16px;
+  }
+  .text .mobile{
+    display: block;
+  }
+  .box:last-child h2{
+    display:none;
+  }
+
+
+  .text p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .text span{
+  font-size: 1.3rem;
+  color: blue;
+  display: block;
+  }
+}
+/*courses*/
+
+.courses{
+  background-color: hsla(0, 0%, 0%,0.08);
+
+}
+.courses h1{
+  text-align: center;
+  font-size:2.5rem;
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 0.8);
+  padding-top: 32px;
+}
+.courses h3{
+  display: none;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 72px 32px 72px;
+
+}
+.info{
+  margin: 16px 16px 24px 16px;
+}
+.item img{
+  height: auto;
+  width: 100%;
+}
+.item{
+  width:30%;
+}
+.info h2{
+  font-size:1.5rem;
+  font-weight:bold;
+    color: hsla(0, 0%, 0%, 0.8);
+}
+.info p{
+  font-size: 1.5rem;
+}
+.info span{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.item{
+  margin-right: 32px;
+  background-color: white;
+  margin-bottom: 32px;
+}
+
+
+
+@media only screen and (max-width:960px){
+.item{
+  display: none;
+}
+.container{
+  display:none;
+}
+ .courses{
+   padding-bottom: 32px;
+   margin-top: -32px;
+ }
+
+ .courses h3{
+  display:block;
+  background-color: hsla(0, 0%, 0%,0.1);
+  padding: 16px 16px 24px 16px;
+  margin: 0 16px 8px 16px;
+  font-size:1.7rem;
+
+}
+.courses h1{
+  padding:32px 0 16px 0;
+}
+}
+
+/*thesis*/
+
+.thesis{
+  background-color: white;
+  margin-top: 32px;
+  border-bottom: solid lightgrey .5px;
+}
+.thesis h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.one{
+  display:flex;
+ align-items:flex-start;
+ 
+}
+.video{
+  width: 60%;
+  margin:0px 24px 24px 24px;
+}
+.type h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.type p{
+font-size: 1.5rem;
+}
+video{
+  width:100%;
+}
+.misc{
+  width: 40%;
+  margin-right: 16px;
+}
+.square{
+display: flex;
+width:100%;
+justify-content:center;
+align-items: center;
+}
+.words h2{
+font-size: 2rem;
+font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+.words p{
+font-size:1.5rem;
+line-height: 1.5;
+}
+.picture img{
+  width:80%;
+  padding: 16px;
+  height: auto;
+
+}
+.square:first-child {
+  background-color: lightgrey;
+}
+.words{
+  width: 65%;
+}
+.video1{
+  display: none;
+}
+@media only screen and (max-width: 960px){
+  .thesis{
+    display:block;
+  }
+
+ .one{
+   width: 100%;
+ }
+  .one .type{
+    display: none;
+  }
+.misc{
+  display: none;
+}
+.video{
+  width:100%;
+}
+
+video{
+width: 100%;
+height: auto;
+}
+}
+/*footer*/
+
+footer{
+  margin:16px 24px 16px 24px;
+  font-size: 1.3rem;
+  display: flex;
+
+}
+footer .rights{
+  flex-grow:1;
+}
+footer .corner{
+  display: flex;
+
+}
+.corner p{
+  margin-left:16px;
+  }
+
+@media only screen and (max-width:960px){
+  footer .corner{
+    display: none;
+  }
+
+}
